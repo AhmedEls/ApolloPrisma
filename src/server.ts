@@ -12,6 +12,7 @@ const server = new ApolloServer({
   plugins: [
     ApolloServerPluginLandingPageGraphQLPlayground(),
   ],
+  debug: process.env.APP_ENV !== 'production'
 })
 
 server.listen().then(({ url }) =>
