@@ -9,6 +9,10 @@ import {
 const server = new ApolloServer({
   schema,
   context: createContext,
+  cors: {
+    credentials: true,
+    origin: "*"
+  },
   plugins: [
     ApolloServerPluginLandingPageGraphQLPlayground(),
   ],
@@ -22,3 +26,5 @@ server.listen().then(({ url }) =>
 ⭐️ See sample queries: http://pris.ly/e/ts/graphql-auth#using-the-graphql-api`,
   ),
 )
+
+export default server

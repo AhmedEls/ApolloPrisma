@@ -828,7 +828,7 @@ graphql-executor@0.0.22:
   resolved "https://registry.yarnpkg.com/graphql-executor/-/graphql-executor-0.0.22.tgz#14bc466bb27ab38346998e0b375cba55685eed94"
   integrity sha512-WbKSnSHFn6REKKH4T6UAwDM3mLUnYMQlQLNG0Fw+Lkb3ilCnL3m5lkJ7411LAI9sF7BvPbthovVZhsEUh9Xfag==
 
-graphql-middleware@6.1.22:
+graphql-middleware@^6.1.22:
   version "6.1.22"
   resolved "https://registry.yarnpkg.com/graphql-middleware/-/graphql-middleware-6.1.22.tgz#33606cc8a3ac0260a598deb548facaaf1e32708a"
   integrity sha512-a5bx4jm/61n+A0yZKHjqQ40sicb0sXwfruJ8YRXeZjEAFJuKab2KJqavLS/1yr50l2T+TEPH31ZVDvu0vYT1fA==
