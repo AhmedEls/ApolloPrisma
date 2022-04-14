@@ -13,15 +13,18 @@ const server = new ApolloServer({
   plugins: [
     ApolloServerPluginLandingPageGraphQLPlayground(),
   ],
-  debug: process.env.APP_ENV !== 'production'
+  debug: process.env.APP_ENV !== 'production',
+  introspection: true
 })
 
-server.listen({ port: 3000 }).then(({ url }) =>
+server.listen().then(({ url, port }) =>
   console.log(
     `\
-🚀 Server ready at: ${url}
+🚀 Server ready at: ${url}:${port}
 ⭐️ See sample queries: http://pris.ly/e/ts/graphql-auth#using-the-graphql-api`,
   ),
 )
 
-export default server
+export {
+  server
+}
