@@ -9,17 +9,14 @@ import {
 const server = new ApolloServer({
   schema,
   context: createContext,
-  cors: {
-    credentials: true,
-    origin: "*"
-  },
+  cors: true,
   plugins: [
     ApolloServerPluginLandingPageGraphQLPlayground(),
   ],
   debug: process.env.APP_ENV !== 'production'
 })
 
-server.listen().then(({ url }) =>
+server.listen({ port: 3000 }).then(({ url }) =>
   console.log(
     `\
 🚀 Server ready at: ${url}

@@ -9,16 +9,7 @@
         }
     }],
     "routes": [{
-            "src": "/(.*)",
-            "dest": "dist/server.js"
-        },
-        {
-            "src": "/",
-            "dest": "ui/build/index.html"
-        },
-        {
-            "src": "/(.+)",
-            "dest": "ui/build/$1"
-        }
-    ]
+        "src": "/(.*)",
+        "dest": "dist/server.js"
+    }]
 }
